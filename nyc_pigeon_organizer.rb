@@ -1,5 +1,6 @@
 def nyc_pigeon_organizer(data)
   pigeon_names = []
+  pigeon_list = {}
   data.each{ |attribute,value|
     value.each{ |name|
       if !pigeon_names.include?(name)
@@ -7,4 +8,6 @@ def nyc_pigeon_organizer(data)
       end
     }
   }
+  
+  
 end

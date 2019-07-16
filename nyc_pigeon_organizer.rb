@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
       value.each { |name|
         if piggy_name = name 
           pigeon_list[piggy_name][attribute].push(value.to_s)
+        end
       }
     }
   }

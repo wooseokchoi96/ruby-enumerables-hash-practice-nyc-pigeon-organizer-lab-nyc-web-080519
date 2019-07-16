@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   }
   pigeon_names.each{ |piggy_name|
     pigeon_list[piggy_name] = Hash.new{ |a, b| a[b] = [] }
-    data.each{ |attribute, value|
+    data.each{ |attribute, attribute_hash|
       pigeon_list[piggy_name][attribute]
       value.each { |name|
         if piggy_name = name 

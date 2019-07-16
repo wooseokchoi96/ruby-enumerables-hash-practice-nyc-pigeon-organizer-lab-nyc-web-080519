@@ -14,10 +14,12 @@ def nyc_pigeon_organizer(data)
     pigeon_list[piggy_name] = Hash.new{ |a, b| a[b] = [] }
     data.each{ |attribute, attribute_hash|
       pigeon_list[piggy_name][attribute]
-      value.each { |name|
+      attribute_hash.each { |value, arr|
+        arr.each{ |name|
         if piggy_name = name 
           pigeon_list[piggy_name][attribute].push(value.to_s)
         end
+        }
       }
     }
   }

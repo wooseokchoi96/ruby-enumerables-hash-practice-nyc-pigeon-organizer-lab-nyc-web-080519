@@ -3,9 +3,9 @@ def nyc_pigeon_organizer(data)
   data.each{ |attribute,value|
     value.each{ |name|
       if !pigeon_list[name].nil?
-        pigeon_list[name]= {
-          attribute: {
-            value: []
+        pigeon_list[name] = {
+          attribute = {
+            value = []
           }
         }
       end

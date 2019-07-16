@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
     }
   }
   pigeon_names.each{ |piggy_name|
-    pigeon_list[piggy_name]
+    pigeon_list[piggy_name] = Hash.new
     data.each{ |attribute, value|
       
     }

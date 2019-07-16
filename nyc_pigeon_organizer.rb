@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
       pigeon_list[piggy_name][attribute]
       attribute_hash.each { |value, arr|
         arr.each{ |name|
-        if piggy_name = name 
+        if piggy_name == name 
           pigeon_list[piggy_name][attribute].push(value.to_s)
         end
         }

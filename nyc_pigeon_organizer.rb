@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
     }
   }
   pigeon_names.each{ |piggy_name|
+    pigeon_list[piggy]
     data.each{ |attribute, value|
       
     }

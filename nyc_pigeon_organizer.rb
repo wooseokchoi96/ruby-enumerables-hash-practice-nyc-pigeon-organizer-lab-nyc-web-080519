@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  pigeon_list = {}
+  pigeon_names = {}
   data.each{ |attribute,value|
     value.each{ |name|
       if !pigeon_list[name].nil?
@@ -11,5 +11,5 @@ def nyc_pigeon_organizer(data)
       end
     }
   }
-  pigeon_list
+  puts pigeon_names
 end
